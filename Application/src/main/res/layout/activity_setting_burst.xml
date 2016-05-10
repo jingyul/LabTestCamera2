@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/BurstSettingLabel"
+        android:text="@string/select_multiple_settings"
+        />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BurstSetting_listView"
+        android:layout_below="@id/BurstSettingLabel"
+        android:layout_alignParentStart="true"
+        android:choiceMode="multipleChoice"
+        android:smoothScrollbar="true"
+        android:listSelector="@android:color/darker_gray"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/burstOk_button" />
+
+
+    <!-- OK button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/ok"
+        android:id="@+id/burstOk_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/BurstSetting_listView" />
+
+    <!-- enter Burst setting name -->
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/cancel"
+        android:id="@+id/cancelMultiple_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/burstOk_button" />
+
+
+</RelativeLayout>

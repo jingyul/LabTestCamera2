@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2015 Opuses LLC
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.opuses.camera.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#404285f4"
+        android:id="@+id/frameLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="26dp"
+            android:layout_gravity="left|bottom">
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/focus_text"
+                android:hint="@string/focus_mm"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:layout_above="@+id/exposure_text"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/exposure_time"
+                android:id="@+id/exposure_text"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:layout_above="@+id/iso_text"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/iso"
+                android:id="@+id/iso_text"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:layout_above="@+id/flash_toggleButton"
+                android:layout_alignStart="@+id/exposure_text"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textOn="@string/flashlight_on"
+                android:textOff="@string/flashlight_off"
+                android:id="@+id/flash_toggleButton"
+                android:checked="false"
+                android:background="#98995f"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:layout_gravity="right|bottom"
+        >
+
+        <Button
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/saveSetting_button"
+        android:text="@string/save_setting"
+        android:textAllCaps="false"
+        />
+
+        <Button
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/selectSetting_button"
+        android:text="@string/select_setting"
+        android:textAllCaps="false"
+         />
+
+        <ToggleButton
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:id="@+id/burst_toggleButton"
+        android:textOn="@string/single"
+        android:textOff="@string/burst"
+        android:checked="false"
+        android:textAllCaps="false"
+         />
+
+        <ImageButton
+        android:id="@+id/picture"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="@string/shot"
+        android:src="@drawable/ic_camera_enhance_black_24dp"
+        android:padding="24dp"
+        android:contentDescription="@string/nothing"
+        />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

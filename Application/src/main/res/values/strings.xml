@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2015 Opuses LLC
+-->
+<resources>
+
+
+    <string name="request_permission">This app needs camera permission.</string>
+
+
+    <string name="focus_mm">Focus 100mm&#8211;infinite</string>
+    <string name="exposure_time">Expo 32000&#8211;5000000000</string>
+    <string name="iso">ISO 50&#8211;1600</string>
+
+    <string name="select_single_setting">Select Single Setting</string>
+    <string name="select_multiple_settings">Select Multiple Settings</string>
+
+    <string name="single">Single Shot</string>
+    <string name="burst">Burst Shot</string>
+    <string name="shot">Shot</string>
+
+    <string name="save_setting">Save Setting</string>
+    <string name="select_setting">Select Setting</string>
+
+    <!-- text for buttons-->
+    <string name="clear_database">Clear Database</string>
+    <string name="flashlight_on">Flash On</string>
+    <string name="flashlight_off">Flash Off</string>
+
+    <string name="star">*</string>
+
+    <string name="nothing"></string>
+</resources>
